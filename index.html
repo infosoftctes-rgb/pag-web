@@ -99,6 +99,32 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         </div>
         
     </footer>
-</body>
+    <script>
+  const form = document.getElementById('form-miembro');
+  const lista = document.getElementById('equipo-lista');
 
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value;
+    const rol = document.getElementById('rol').value;
+    const descripcion = document.getElementById('descripcion').value;
+    const foto = document.getElementById('foto').value || 'https://via.placeholder.com/150';
+
+    const miembro = document.createElement('div');
+    miembro.classList.add('miembro');
+    miembro.innerHTML = `
+      <img src="${foto}" alt="Foto de ${nombre}">
+      <h3>${nombre}</h3>
+      <p><strong>${rol}</strong></p>
+      <p>${descripcion}</p>
+    `;
+    lista.appendChild(miembro);
+
+    form.reset();
+  });
+</script>
+</body>
+    
 </html>
+
