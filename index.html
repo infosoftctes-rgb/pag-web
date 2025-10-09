@@ -73,25 +73,6 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         <button>Contactanos</button>
         </form>
     </section>
-
-<!--NOSOTROS-->
-    <section id="nuestro-equipo">
-  <div class="container">
-    <h2>Conocé a Nuestro Equipo</h2>
-    <div id="equipo-lista" class="equipo-lista">
-      <!-- Aquí se agregan los miembros -->
-    </div>
-
-    <h3>Agregar nuevo miembro</h3>
-    <form id="form-miembro">
-      <input type="text" id="nombre" placeholder="Nombre completo" required>
-      <input type="text" id="rol" placeholder="Rol o puesto" required>
-      <textarea id="descripcion" placeholder="Descripción breve" required></textarea>
-      <input type="url" id="foto" placeholder="URL de la foto (opcional)">
-      <button type="submit">Agregar</button>
-    </form>
-  </div>
-</section>
     
     <footer>
             <div class="container">
@@ -99,32 +80,8 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         </div>
         
     </footer>
-    <script>
-  const form = document.getElementById('form-miembro');
-  const lista = document.getElementById('equipo-lista');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const nombre = document.getElementById('nombre').value;
-    const rol = document.getElementById('rol').value;
-    const descripcion = document.getElementById('descripcion').value;
-    const foto = document.getElementById('foto').value || 'https://via.placeholder.com/150';
-
-    const miembro = document.createElement('div');
-    miembro.classList.add('miembro');
-    miembro.innerHTML = `
-      <img src="${foto}" alt="Foto de ${nombre}">
-      <h3>${nombre}</h3>
-      <p><strong>${rol}</strong></p>
-      <p>${descripcion}</p>
-    `;
-    lista.appendChild(miembro);
-
-    form.reset();
-  });
-</script>
 </body>
     
 </html>
+
 
