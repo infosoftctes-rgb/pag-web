@@ -284,43 +284,9 @@ footer .container{
     footer .container{
         justify-content:  flex-end;
     }
-#nuestro-equipo {
-  padding: 40px;
-  background-color: #f0f0f0;
-  text-align: center;
-}
 
-.equipo-lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.miembro {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.miembro img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-#form-miembro input,
-#form-miembro textarea,
-#form-miembro button {
-  display: block;
-  width: 100%;
-  margin: 10px auto;
-  padding: 10px;
-  max-width: 400px;
   
 }
+
 
 
