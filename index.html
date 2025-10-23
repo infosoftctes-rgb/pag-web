@@ -39,34 +39,62 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         </div>
          </div>
     </section>
-    <section id="nuestros-servicios">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="programas">
-        <div class="carta">
-            <h3>Sistema de Stock</h3>
-            <p>Permite gestionar productos, entradas, salidas y niveles de inventario en tiempo real. Ideal para optimizar la administración de recursos y evitar faltantes o excesos de mercadería.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-        <div class="carta">
-            <h3>Desarrollo Web</h3>
-            <p>Creamos sitios web modernos, rápidos y adaptables a cualquier dispositivo. Ofrecemos soluciones personalizadas con diseño atractivo y una experiencia de usuario intuitiva.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-        <div class="carta">
-            <h3>Aps Mobiles</h3>
-            <p>Diseñamos y desarrollamos apps para Android y iOS que mejoran la comunicación con tus clientes y facilitan el acceso a tus servicios desde cualquier lugar.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-         </div>
-         </div>
-    </section>
+  <section id="nuestros-servicios">
+  <div class="container">
+    <h2>Nuestros Servicios</h2>
+    <div class="programas">
+      <div class="carta">
+        <h3>Sistema de Stock</h3>
+        <p>Permite gestionar productos, entradas, salidas y niveles de inventario en tiempo real. Ideal para optimizar la administración de recursos y evitar faltantes o excesos de mercadería.</p>
+        <button onclick="abrirModal('modal-stock')">+ Info</button>
+      </div>
+      <div class="carta">
+        <h3>Desarrollo Web</h3>
+        <p>Creamos sitios web modernos, rápidos y adaptables a cualquier dispositivo. Ofrecemos soluciones personalizadas con diseño atractivo y una experiencia de usuario intuitiva.</p>
+        <button onclick="abrirModal('modal-web')">+ Info</button>
+      </div>
+      <div class="carta">
+        <h3>Apps Móviles</h3>
+        <p>Diseñamos y desarrollamos apps para Android y iOS que mejoran la comunicación con tus clientes y facilitan el acceso a tus servicios desde cualquier lugar.</p>
+        <button onclick="abrirModal('modal-apps')">+ Info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modales -->
+  <div id="modal-stock" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal-stock')">&times;</span>
+      <h3>Sistema de Stock</h3>
+      <p>Este sistema permite controlar inventarios en tiempo real, generar reportes automáticos y reducir pérdidas.</p>
+      <h4>Caso de Éxito:</h4>
+      <p>La empresa "Distribuidora Norte" redujo un 40% sus faltantes de productos en solo 3 meses.</p>
+      <a href="#contactanos"><button>Solicitar Servicio</button></a>
+    </div>
+  </div>
+
+  <div id="modal-web" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal-web')">&times;</span>
+      <h3>Desarrollo Web</h3>
+      <p>Diseños responsivos, optimización SEO y paneles de administración personalizados.</p>
+      <h4>Caso de Éxito:</h4>
+      <p>El sitio de "EcoTurismo Ctes" aumentó sus reservas online un 60% tras el rediseño web.</p>
+      <a href="#contactanos"><button>Solicitar Servicio</button></a>
+    </div>
+  </div>
+
+  <div id="modal-apps" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal-apps')">&times;</span>
+      <h3>Apps Móviles</h3>
+      <p>Apps nativas y multiplataforma con integración a sistemas existentes.</p>
+      <h4>Caso de Éxito:</h4>
+      <p>"Farmacia Express" logró duplicar sus pedidos gracias a su nueva app de entregas.</p>
+      <a href="#contactanos"><button>Solicitar Servicio</button></a>
+    </div>
+  </div>
+</section>
 
 <!-- Sección Nuestro Equipo -->
 <section id="nuestro-equipo" class="equipo-section">
@@ -168,10 +196,29 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
 
 <!-- Importa Font Awesome -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<script>
+function abrirModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+function cerrarModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+window.onclick = function(event) {
+  const modales = document.querySelectorAll('.modal');
+  modales.forEach(modal => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+</script>
     
 </body>
     
 </html>
+
 
 
 
