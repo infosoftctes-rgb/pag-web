@@ -8,7 +8,7 @@ function botResponse(option) {
   let response = "";
 
   if (option === "servicios") {
-    response = "Nuestros servicios incluyen desarrollo web, soporte técnico y soluciones personalizadas. Para solicitar algunos de estos servicios a través en la sección Nuestros Servicios, donde encontraras lo que ofrecemos 💻.";
+    response = "Nuestros servicios incluyen desarrollo web, soporte técnico y soluciones personalizadas. Para solicitar algunos de estos podes hacerlo a través de la sección Nuestros Servicios, donde encontraras todo lo que ofrecemos 💻.";
   } else if (option === "contacto") {
     response = "Podés contactarnos por email a infosoftctes@gmail.com o a través del formulario en la sección Contacto 📬.";
   } else if (option === "equipo") {
