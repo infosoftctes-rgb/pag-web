@@ -413,5 +413,9 @@ footer .container{
   font-size: 28px;
   cursor: pointer;
 }
+.romina-img {
+  position: relative;
+  top: 20px; /* baja la imagen 20 píxeles */
+}
 
 
