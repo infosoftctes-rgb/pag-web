@@ -39,34 +39,100 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         </div>
          </div>
     </section>
-    <section id="nuestros-servicios">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="programas">
-        <div class="carta">
-            <h3>Sistema de Stock</h3>
-            <p>Permite gestionar productos, entradas, salidas y niveles de inventario en tiempo real. Ideal para optimizar la administración de recursos y evitar faltantes o excesos de mercadería.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-        <div class="carta">
-            <h3>Desarrollo Web</h3>
-            <p>Creamos sitios web modernos, rápidos y adaptables a cualquier dispositivo. Ofrecemos soluciones personalizadas con diseño atractivo y una experiencia de usuario intuitiva.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-        <div class="carta">
-            <h3>Aps Mobiles</h3>
-            <p>Diseñamos y desarrollamos apps para Android y iOS que mejoran la comunicación con tus clientes y facilitan el acceso a tus servicios desde cualquier lugar.</p>
-            <form action="form.html">
-            <button>+ Info</button>
-            </form>
-        </div>
-         </div>
-         </div>
-    </section>
+
+    <!--servicios-->
+    
+      <section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-container">
+
+      <div class="servicio-card">
+        <h3>Sistema de Stock</h3>
+        <p>Gestión completa de inventario para tu negocio.</p>
+        <button class="info-btn" data-modal="modal-stock">+ Info</button>
+      </div>
+
+      <div class="servicio-card">
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios web modernos y adaptativos.</p>
+        <button class="info-btn" data-modal="modal-web">+ Info</button>
+      </div>
+
+      <div class="servicio-card">
+        <h3>Apps Móviles</h3>
+        <p>Aplicaciones nativas y multiplataforma de alto rendimiento.</p>
+        <button class="info-btn" data-modal="modal-apps">+ Info</button>
+      </div>
+
+    </div>
+  </section>
+     <!-- MODALS -->
+  <div id="modal-stock" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Sistema de Stock</h3>
+      <p>
+        Nuestro sistema de stock permite llevar un control exacto de productos, movimientos y ventas.
+        Integra alertas automáticas por bajo inventario y reportes en tiempo real.
+      </p>
+      <ul>
+        <li>📦 Control de inventario</li>
+        <li>📊 Reportes automáticos</li>
+        <li>🔔 Notificaciones de stock bajo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal-web" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Desarrollo Web</h3>
+      <p>
+        Creamos sitios y plataformas personalizadas con las últimas tecnologías, optimizadas para SEO y rendimiento.
+      </p>
+      <ul>
+        <li>💻 Diseño responsive</li>
+        <li>⚙️ Integración con bases de datos</li>
+        <li>🚀 Optimización para motores de búsqueda</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal-apps" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Apps Móviles</h3>
+      <p>
+        Desarrollamos aplicaciones móviles escalables, intuitivas y seguras para Android e iOS.
+      </p>
+      <ul>
+        <li>📱 Aplicaciones nativas y multiplataforma</li>
+        <li>🔐 Enfoque en seguridad y UX</li>
+        <li>🧠 Escalables y personalizables</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Casos de éxito -->
+  <section id="casos" class="casos">
+    <h2>Casos de Éxito</h2>
+    <div class="casos-container">
+      <div class="caso-card">
+        <h4>📈 MarketPro</h4>
+        <p>Duplicaron su rendimiento logístico con nuestro Sistema de Stock, reduciendo errores un 80%.</p>
+      </div>
+      <div class="caso-card">
+        <h4>🌐 WebNow</h4>
+        <p>Con nuestro Desarrollo Web, aumentaron su tráfico en un 300% en solo 2 meses.</p>
+      </div>
+      <div class="caso-card">
+        <h4>📲 FitTrack</h4>
+        <p>Su app móvil logró más de 100.000 descargas gracias a nuestro desarrollo multiplataforma.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="modal.js"></script>
 
 <!-- Sección Nuestro Equipo -->
 <section id="nuestro-equipo" class="equipo-section">
@@ -165,13 +231,81 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
     </div>
   </div>
 </footer>
+ <!-- MODALS -->
+  <div id="modal-stock" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Sistema de Stock</h3>
+      <p>
+        Nuestro sistema de stock permite llevar un control exacto de productos, movimientos y ventas.
+        Integra alertas automáticas por bajo inventario y reportes en tiempo real.
+      </p>
+      <ul>
+        <li>📦 Control de inventario</li>
+        <li>📊 Reportes automáticos</li>
+        <li>🔔 Notificaciones de stock bajo</li>
+      </ul>
+    </div>
+  </div>
 
+  <div id="modal-web" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Desarrollo Web</h3>
+      <p>
+        Creamos sitios y plataformas personalizadas con las últimas tecnologías, optimizadas para SEO y rendimiento.
+      </p>
+      <ul>
+        <li>💻 Diseño responsive</li>
+        <li>⚙️ Integración con bases de datos</li>
+        <li>🚀 Optimización para motores de búsqueda</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal-apps" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Apps Móviles</h3>
+      <p>
+        Desarrollamos aplicaciones móviles escalables, intuitivas y seguras para Android e iOS.
+      </p>
+      <ul>
+        <li>📱 Aplicaciones nativas y multiplataforma</li>
+        <li>🔐 Enfoque en seguridad y UX</li>
+        <li>🧠 Escalables y personalizables</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Casos de éxito -->
+  <section id="casos" class="casos">
+    <h2>Casos de Éxito</h2>
+    <div class="casos-container">
+      <div class="caso-card">
+        <h4>📈 MarketPro</h4>
+        <p>Duplicaron su rendimiento logístico con nuestro Sistema de Stock, reduciendo errores un 80%.</p>
+      </div>
+      <div class="caso-card">
+        <h4>🌐 WebNow</h4>
+        <p>Con nuestro Desarrollo Web, aumentaron su tráfico en un 300% en solo 2 meses.</p>
+      </div>
+      <div class="caso-card">
+        <h4>📲 FitTrack</h4>
+        <p>Su app móvil logró más de 100.000 descargas gracias a nuestro desarrollo multiplataforma.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="modal.js"></script>
+    
 <!-- Importa Font Awesome -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
 </body>
     
 </html>
+
 
 
 
