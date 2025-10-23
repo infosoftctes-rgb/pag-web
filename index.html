@@ -125,9 +125,30 @@ pensados para optimizar los procesos de cada negocio. También desarrollamos pá
         </div>
         
     </footer>
+    <!-- Chatbot flotante -->
+<div class="chatbot-container" id="chatbot">
+  <div class="chatbot-header">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot" class="chatbot-logo">
+    <span>InfoBot</span>
+    <button class="chatbot-close" onclick="toggleChat()">×</button>
+  </div>
+  <div class="chatbot-body" id="chatbotBody">
+    <div class="bot-message">👋 ¡Hola! Soy InfoBot, ¿en qué puedo ayudarte hoy?</div>
+    <button class="option-btn" onclick="botResponse('servicios')">📦 Dudas sobre servicios</button>
+    <button class="option-btn" onclick="botResponse('contacto')">📞 Formas de contacto</button>
+    <button class="option-btn" onclick="botResponse('equipo')">👥 Información sobre el equipo</button>
+  </div>
+</div>
+
+<!-- Botón flotante -->
+<div class="chatbot-button" onclick="toggleChat()">
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot" class="chatbot-icon">
+</div>
+    
 </body>
     
 </html>
+
 
 
 
