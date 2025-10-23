@@ -386,6 +386,7 @@ footer .container{
   transform: scale(1.15);
 }
 
+/* --- Modal --- */
 
 .modal {
   display: none;
@@ -397,7 +398,8 @@ footer .container{
   background-color: rgba(0,0,0,0.6);
 }
 .modal-content {
-  background-color: #fff;
+ background-color: #fff;
+  color: #000;
   margin: 10% auto;
   padding: 20px;
   border-radius: 8px;
@@ -409,3 +411,4 @@ footer .container{
   font-size: 28px;
   cursor: pointer;
 }
+
