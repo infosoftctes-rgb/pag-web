@@ -415,9 +415,10 @@ footer .container{
 }
 
 
+/* --- Fooster importado por Front Awesome --- */
 .social-icons a {
-  font-size: 24px;
-  margin-right: 15px;
+  font-size: 44px;
+  margin-right: 25px;
   color: #fff;
   transition: 0.3s ease;
 }
@@ -426,4 +427,5 @@ footer .container{
   color: #00c3ff;
   transform: scale(1.1);
 }
+
 
